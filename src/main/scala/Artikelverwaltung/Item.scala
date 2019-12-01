@@ -6,11 +6,9 @@ class Item (id :Int, name: String, value:Int) extends Printer {
   def getName: String = name
   def getValue: Int = value
 
-  def printAction(id:Int, name:String, value:Int): Unit ={
-    println(name + " wurde gespeichert!")
+  override def printAction(actionName: String, name: String): Unit ={
+    println(name + actionName)
   }
 }
 
-trait Printer {
-  def printAction (actionName: String, name: String): Unit = { }
-}
+
