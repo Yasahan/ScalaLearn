@@ -37,7 +37,7 @@ class Database extends StockManagement {
 
   override def store(item: StoreItem): Array[StoreItem] = {
     storedItemsDynamic.insert(0, item)
-    item.printAction(" gefunden", item.getName)
+    item.printAction(" gespeichert", item.getName)
     storedItems = storedItemsDynamic.toArray
     storedItems
   }
