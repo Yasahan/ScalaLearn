@@ -18,7 +18,7 @@ object MainApp {
     db.delete(1)
     db.search("PC")
 
-    db.storedItemsDynamic.toArray
+    db.storedItems.toArray
 
 
   }*/
